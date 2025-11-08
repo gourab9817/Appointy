@@ -5,6 +5,14 @@
 Second Memory is a comprehensive Chrome extension and web dashboard that transforms how you save and discover information. Whether it's articles, screenshots, or PDF documents, Second Memory uses advanced AI (Google Gemini) to help you find exactly what you're looking for with semantic search that understands context, not just keywords.
 
 ---
+### Apps architecture diagram
+## Application Architecture
+
+![Architecture Diagram](APP_Architecture_diagram.png)
+
+## User Flow
+
+![User Flow](APP_Userflow.png)
 
 ## 📋 Table of Contents
 
