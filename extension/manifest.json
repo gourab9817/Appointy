@@ -1,0 +1,59 @@
+{
+  "manifest_version": 3,
+  "name": "Second Memory",
+  "version": "1.0.0",
+  "description": "Your personal second brain - capture and recall anything instantly",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs",
+    "contextMenus",
+    "notifications",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "dist/popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "dist/background.js",
+    "type": "module"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+M",
+        "windows": "Alt+Shift+M",
+        "mac": "Alt+Shift+M"
+      },
+      "description": "Open Second Memory popup"
+    },
+    "quick-save": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "windows": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
+      },
+      "description": "Quick save current page"
+    }
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["dist/dashboard.html", "dist/dashboard.js", "dist/dashboard.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
+
